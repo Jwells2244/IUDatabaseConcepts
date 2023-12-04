@@ -1,0 +1,106 @@
+CREATE DATABASE
+CREATE TABLE
+INSERT 0 6
+CREATE TABLE
+INSERT 0 5
+CREATE TABLE
+INSERT 0 14
+CREATE TYPE
+CREATE TYPE
+CREATE TYPE
+CREATE TABLE
+CREATE TYPE
+CREATE TABLE
+INSERT 0 5
+INSERT 0 5
+Problem 1
+CREATE VIEW
+ cno  |                             gradeinfo                             
+------+-------------------------------------------------------------------
+ c200 | {"(A,\"{(s100)}\")","(B,\"{(s101),(s102)}\")"}
+ c201 | {"(A,\"{(s101),(s103)}\")","(B,\"{(s100)}\")","(D,\"{(s104)}\")"}
+ c202 | {"(A,\"{(s100),(s101),(s102)}\")"}
+ c301 | {"(B,\"{(s102)}\")","(C,\"{(s101)}\")"}
+ c302 | {"(A,\"{(s101),(s102)}\")"}
+(5 rows)
+
+Problem 2
+ sid1 |        courses        
+------+-----------------------
+ s100 | {c200,c201,c202}
+ s101 | {c200,c201,c202,c302}
+ s102 | {c200,c202,c301,c302}
+ s103 | {c201}
+(4 rows)
+
+Problem 3
+CREATE VIEW
+                                                                                             cno                                                                                              
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ {"cno": "c200", "gradeInfo": [{"grade": "A", "students": [{"sid": "s100"}]}, {"grade": "B", "students": [{"sid": "s101"}, {"sid": "s102"}]}]}
+ {"cno": "c201", "gradeInfo": [{"grade": "A", "students": [{"sid": "s101"}, {"sid": "s103"}]}, {"grade": "B", "students": [{"sid": "s100"}]}, {"grade": "D", "students": [{"sid": "s104"}]}]}
+ {"cno": "c202", "gradeInfo": [{"grade": "A", "students": [{"sid": "s100"}, {"sid": "s101"}, {"sid": "s102"}]}]}
+ {"cno": "c301", "gradeInfo": [{"grade": "B", "students": [{"sid": "s102"}]}, {"grade": "C", "students": [{"sid": "s101"}]}]}
+ {"cno": "c302", "gradeInfo": [{"grade": "A", "students": [{"sid": "s101"}, {"sid": "s102"}]}]}
+(5 rows)
+
+Problem 4
+CREATE FUNCTION
+ cumulative_sum 
+----------------
+ {1,3,6,10}
+(1 row)
+
+Problem 5
+CREATE FUNCTION
+   find_primes   
+-----------------
+ {2,3,5,7,11,13}
+(1 row)
+
+Problem 6
+CREATE TABLE
+INSERT 0 11
+CREATE FUNCTION
+CREATE FUNCTION
+ m  | n  
+----+----
+  1 |  1
+  2 |  2
+  2 |  3
+  2 |  4
+  3 |  2
+  3 |  3
+  3 |  4
+  4 |  2
+  4 |  3
+  4 |  4
+  5 |  5
+  5 |  6
+  5 |  7
+  5 |  8
+  6 |  5
+  6 |  6
+  6 |  7
+  6 |  8
+  7 |  5
+  7 |  6
+  7 |  7
+  7 |  8
+  8 |  5
+  8 |  6
+  8 |  7
+  8 |  8
+  9 |  9
+  9 | 10
+  9 | 11
+ 10 |  9
+ 10 | 10
+ 10 | 11
+ 11 |  9
+ 11 | 10
+ 11 | 11
+ 12 | 12
+(36 rows)
+
+DROP DATABASE
