@@ -1,0 +1,263 @@
+CREATE DATABASE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 19
+INSERT 0 8
+INSERT 0 19
+INSERT 0 15
+INSERT 0 5
+INSERT 0 46
+INSERT 0 13
+INSERT 0 66
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE FUNCTION
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+Problem 1
+CREATE FUNCTION
+CREATE TRIGGER
+Insert INTO Company VALUES("Google", "NewYork");
+psql:/Users/jonathanwells/Downloads/assignment5.sql:571: ERROR:  cname already exists
+Problem 2
+CREATE FUNCTION
+CREATE TRIGGER
+INSERT INTO worksFor VALUES(1001, "Airbnb", 65000);
+psql:/Users/jonathanwells/Downloads/assignment5.sql:596: ERROR:  cname does not exist in Company
+Problem 3
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE FUNCTION
+CREATE TRIGGER
+CREATE FUNCTION
+CREATE TRIGGER
+INSERT 0 1
+INSERT 0 1
+ a  
+----
+ 15
+(1 row)
+
+INSERT 0 1
+INSERT 0 1
+ a  
+----
+ 15
+(1 row)
+
+INSERT 0 1
+INSERT 0 1
+ a  
+----
+ 15
+(1 row)
+
+INSERT 0 1
+INSERT 0 1
+  a  
+-----
+  15
+ 101
+(2 rows)
+
+DROP TABLE
+DROP TABLE
+DROP TABLE
+Problem 4
+CREATE FUNCTION
+CREATE TRIGGER
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+ pid | skill 
+-----+-------
+(0 rows)
+
+ pid  |      skill       
+------+------------------
+ 2002 | AI
+ 2002 | Databases
+ 2002 | Networks
+ 2002 | OperatingSystems
+ 2002 | Programming
+ 2002 | Devops
+(6 rows)
+
+ pid  |      skill       
+------+------------------
+ 2003 | AI
+ 2003 | Databases
+ 2003 | Networks
+ 2003 | OperatingSystems
+ 2003 | Programming
+ 2003 | Cloud
+(6 rows)
+
+ pid  | skill  
+------+--------
+ 2004 | Design
+(1 row)
+
+ pid | skill 
+-----+-------
+(0 rows)
+
+DELETE 13
+DELETE 3
+DELETE 5
+DELETE 5
+Problem 5
+CREATE FUNCTION
+CREATE TRIGGER
+SELECT 66
+CREATE FUNCTION
+UPDATE 1
+ pid1 | pid2 
+------+------
+ 1005 | 1015
+ 1005 | 1001
+ 1005 | 1012
+(3 rows)
+
+ retain_data 
+-------------
+ 
+(1 row)
+
+UPDATE 1
+ pid1 | pid2 
+------+------
+ 1012 | 1011
+ 1012 | 1005
+(2 rows)
+
+ retain_data 
+-------------
+ 
+(1 row)
+
+DROP TABLE
+Problem 6
+  cname  | headquarter  
+---------+--------------
+ Amazon  | Seattle
+ Apple   | Cupertino
+ Google  | MountainView
+ Netflix | LosGatos
+(4 rows)
+
+Problem 7
+ pid  |  pname   | set_intersection 
+------+----------+------------------
+ 1001 | Jean     | {1002}
+ 1002 | Vidya    | {1004,1015}
+ 1003 | Anna     | {1004,1006,1015}
+ 1004 | Qin      | {1006,1016,1018}
+ 1005 | Megan    | {1015}
+ 1006 | Ryan     | {1016}
+ 1007 | Danielle | {1018}
+ 1008 | Emma     | {1001}
+ 1009 | Hasan    | {1018}
+ 1010 | Linda    | {1018}
+ 1011 | Nick     | {1002,1012,1015}
+ 1012 | Eric     | {1001,1004}
+ 1013 | Lisa     | {1004,1018}
+ 1014 | Deepa    | {1001,1002,1004}
+ 1015 | Chris    | {1002,1016}
+ 1016 | YinYue   | {}
+ 1017 | Latha    | {}
+ 1018 | Arif     | {1015}
+ 1019 | John     | {1001,1004}
+(19 rows)
+
+Problem 8
+ pid  | pname 
+------+-------
+ 1011 | Nick
+(1 row)
+
+Problem 9
+  array   
+----------
+ {Amazon}
+(1 row)
+
+Problem 10
+                     set_union                     
+---------------------------------------------------
+ {AI}
+ {AI,Databases}
+ {AI,Databases,Networks}
+ {AI,Databases,Networks,OperatingSystems}
+ {AI,Databases,Networks,Programming}
+ {AI,Databases,OperatingSystems}
+ {AI,Databases,OperatingSystems,Programming}
+ {AI,Databases,Programming}
+ {AI,Networks}
+ {AI,Networks,OperatingSystems}
+ {AI,Networks,OperatingSystems,Programming}
+ {AI,Networks,Programming}
+ {AI,OperatingSystems}
+ {AI,OperatingSystems,Programming}
+ {AI,Programming}
+ {Databases}
+ {Databases,Networks}
+ {Databases,Networks,OperatingSystems}
+ {Databases,Networks,OperatingSystems,Programming}
+ {Databases,Networks,Programming}
+ {Databases,OperatingSystems}
+ {Databases,OperatingSystems,Programming}
+ {Databases,Programming}
+ {Networks}
+ {Networks,OperatingSystems}
+ {Networks,OperatingSystems,Programming}
+ {Networks,Programming}
+ {OperatingSystems}
+ {OperatingSystems,Programming}
+ {Programming}
+(30 rows)
+
+DROP DATABASE
