@@ -1,0 +1,240 @@
+CREATE DATABASE
+DROP SCHEMA
+CREATE SCHEMA
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 19
+INSERT 0 8
+INSERT 0 19
+INSERT 0 15
+INSERT 0 6
+INSERT 0 37
+INSERT 0 12
+INSERT 0 66
+Problem 2
+Getting rid of the exists
+ pid  
+------
+ 1001
+ 1002
+ 1004
+ 1007
+ 1008
+ 1009
+ 1010
+ 1011
+ 1012
+ 1013
+ 1014
+ 1015
+ 1017
+ 1018
+ 1019
+(15 rows)
+
+Adding in joins
+ pid  
+------
+ 1001
+ 1002
+ 1004
+ 1007
+ 1008
+ 1009
+ 1010
+ 1011
+ 1012
+ 1013
+ 1014
+ 1015
+ 1017
+ 1018
+ 1019
+(15 rows)
+
+Getting rid of the nested or in the w table
+ pid  
+------
+ 1018
+ 1004
+ 1007
+ 1008
+ 1012
+ 1009
+ 1017
+ 1019
+ 1015
+ 1011
+ 1010
+ 1002
+ 1001
+ 1013
+ 1014
+(15 rows)
+
+Problem 3;
+Getting rid of the in from the not in
+ pid  | cname  
+------+--------
+ 1002 | Apple
+ 1008 | Amazon
+ 1009 | Apple
+ 1011 | Google
+ 1014 | Apple
+(5 rows)
+
+Getting rid of the not in and the person table because worksFor pid
+ pid  | cname  
+------+--------
+ 1002 | Apple
+ 1008 | Amazon
+ 1009 | Apple
+ 1011 | Google
+ 1014 | Apple
+(5 rows)
+
+Getting rid of the exists
+ pid  | cname  
+------+--------
+ 1002 | Apple
+ 1008 | Amazon
+ 1009 | Apple
+ 1011 | Google
+ 1014 | Apple
+(5 rows)
+
+doing the joins
+ pid  | cname  
+------+--------
+ 1009 | Apple
+ 1011 | Google
+ 1014 | Apple
+ 1008 | Amazon
+ 1002 | Apple
+(5 rows)
+
+Moving the constant even tho I dont have to
+ pid  | cname  
+------+--------
+ 1009 | Apple
+ 1011 | Google
+ 1014 | Apple
+ 1008 | Amazon
+ 1002 | Apple
+(5 rows)
+
+Moving the clauses from the same schema
+ pid  | cname  
+------+--------
+ 1009 | Apple
+ 1011 | Google
+ 1014 | Apple
+ 1008 | Amazon
+ 1002 | Apple
+(5 rows)
+
+Problem 4;
+Getting rid of the nested exist
+      skill       
+------------------
+ AI
+ Networks
+ OperatingSystems
+(3 rows)
+
+Getting rid of the actual exists
+      skill       
+------------------
+ AI
+ Networks
+ OperatingSystems
+(3 rows)
+
+doing joins
+      skill       
+------------------
+ AI
+ Networks
+ OperatingSystems
+(3 rows)
+
+Moving the constants just because
+      skill       
+------------------
+ AI
+ Networks
+ OperatingSystems
+(3 rows)
+
+Problem 5;
+Translating the mv
+ pid  | salary 
+------+--------
+ 1005 |  50000
+ 1011 |  45000
+(2 rows)
+
+Translating the all_that_know_p
+ pid  | salary 
+------+--------
+ 1005 |  50000
+ 1011 |  45000
+(2 rows)
+
+Translating the not_exists in min salary
+ pid  | salary 
+------+--------
+ 1005 |  50000
+ 1011 |  45000
+(2 rows)
+
+Adding joins
+ pid  | salary 
+------+--------
+ 1005 |  50000
+ 1011 |  45000
+(2 rows)
+
+Getting rid of the constant
+ pid  | salary 
+------+--------
+ 1005 |  50000
+ 1011 |  45000
+(2 rows)
+
+Problem 6;
+Translating the and exists
+ cname  
+--------
+ Amazon
+ Apple
+(2 rows)
+
+Translating the where exists
+ cname  
+--------
+ Amazon
+ Apple
+(2 rows)
+
+Adding joins
+ cname  
+--------
+ Amazon
+ Apple
+(2 rows)
+
+Getting rid of the constant to get rid of the where
+ cname  
+--------
+ Amazon
+ Apple
+(2 rows)
+
+DROP DATABASE
