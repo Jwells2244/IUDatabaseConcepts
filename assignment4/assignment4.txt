@@ -1,0 +1,90 @@
+CREATE DATABASE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 19
+INSERT 0 8
+INSERT 0 19
+INSERT 0 15
+INSERT 0 5
+INSERT 0 46
+INSERT 0 13
+INSERT 0 66
+Problem 6
+CREATE FUNCTION
+CREATE FUNCTION
+      c       |  p   
+--------------+------
+ Bloomington  | 1008
+ Bloomington  | 1014
+ Bloomington  | 1018
+ Chicago      | 1006
+ Chicago      | 1010
+ Chicago      | 1016
+ Cupertino    | 1002
+ Denver       | 1015
+ Indianapolis | 1013
+ LosGatos     | 1007
+ MountainView | 1005
+ NewYork      | 1019
+ Seattle      | 1003
+ Seattle      | 1004
+(14 rows)
+
+Problem 7
+CREATE VIEW
+CREATE VIEW
+ pid  | pname  
+------+--------
+ 1001 | Jean
+ 1002 | Vidya
+ 1003 | Anna
+ 1004 | Qin
+ 1008 | Emma
+ 1015 | Chris
+ 1016 | YinYue
+ 1018 | Arif
+(8 rows)
+
+Problem 8
+CREATE VIEW
+ pid1 
+------
+ 1001
+ 1004
+ 1010
+ 1013
+ 1015
+(5 rows)
+
+Problem 9
+CREATE FUNCTION
+CREATE VIEW
+ pid  |  pname   
+------+----------
+ 1002 | Vidya
+ 1004 | Qin
+ 1007 | Danielle
+ 1010 | Linda
+ 1016 | YinYue
+ 1018 | Arif
+ 1019 | John
+(7 rows)
+
+Problem 10
+CREATE VIEW
+CREATE FUNCTION
+  cname  
+---------
+ ACM
+ Google
+ IBM
+ Netflix
+(4 rows)
+
+DROP DATABASE
